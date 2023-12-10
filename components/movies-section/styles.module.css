@@ -11,8 +11,8 @@
   
   .movies {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-auto-rows: 320px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 420px;
     gap: 24px;
   }
   
@@ -23,8 +23,26 @@
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
   }
-  
+  .movie a img{
+    object-fit: cover;
+    object-position: center center;
+  }
   .movie:hover {
     z-index: 9;
-    transform: scale(1.07);
+    transform: scale(1.04);
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 767px){
+    .title{
+      font-size: 20px;
+    }
+    .movies{
+      grid-auto-rows: 600px;
+      gap: 32px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .movie:hover {
+      z-index: 9;
+      transform: scale(1);
+    }
   }

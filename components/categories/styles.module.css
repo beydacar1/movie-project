@@ -2,6 +2,7 @@
     display: flex;
     height: 72px;
     gap: 24px;
+   
   }
   
   .category {
@@ -15,4 +16,21 @@
     height: 100%;
     border-radius: 6px;
     font-weight: 700;
+    transition: all 0.4s ease;
+  }
+  .category:hover{
+   border-color: rgba(255, 255, 255, 0.7);
+  }
+  @media only screen and (min-width: 320px) and (max-width: 767px){
+    .categories{
+      height: 48px;
+      overflow-x: scroll;
+      gap: 16px;
+    }
+    .categories::-webkit-scrollbar {
+      display: none;
+    }
+    .category{
+      padding: 0 20px;
+    }
   }

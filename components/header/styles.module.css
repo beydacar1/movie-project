@@ -22,6 +22,16 @@
     display: flex;
     gap: 48px;
     color: #fafafa;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 2px;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 767px){
+    .navigationMenu{
+      gap: 12px;
+      font-size: 16px;
+    }
+    .logo{
+      font-size: 20px;
+    }
   }

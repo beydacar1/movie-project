@@ -80,3 +80,14 @@
     max-height: 100vh;
     object-fit: cover;
   }
+
+
+  @media only screen and (min-width: 320px) and (max-width: 767px){
+    .movieTitle{
+      font-size: 42px;
+      line-height: 56px;
+    }
+    .overview{
+      font-size: 16px;
+    }
+  }
